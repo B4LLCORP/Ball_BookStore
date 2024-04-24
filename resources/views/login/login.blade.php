@@ -28,8 +28,7 @@
                     <div
                         class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
                         <div class="login-brand">
-                            <!-- <img src="stisla/img/stisla-fill.svg" alt="logo" width="100"
-                                class="shadow-light rounded-circle"> -->
+                
                         </div>
 
                         <div class="card card-primary shadow">
@@ -37,41 +36,27 @@
                                 <h4 class="text-primary">Toko Gracia Food</h4>
                             </div>
                             <div class="card-body">
-                                <form method="POST" action="/postlogin" class="needs-validation">
+                                <form method="POST" action="{{url('ceklogin')}}" class="needs-validation">
                                     @csrf
                                     <div class="form-group">
-                                        <label class="text-primary" for="email">Email</label>
-                                        <input id="email" type="email" class="form-control" name="email" tabindex="1"
-                                            autofocus placeholder="Masukkan Email">
-                                        <div class="invalid-feedback">
-                                            Please fill in your email
-                                        </div>
+                                        <label class="text-primary" for="username">Username</label>
+                                        <input id="username" type="text" class="form-control" name="username"
+                                        tabindex="2" placeholder="Masukan Username">
+                                    <div class="invalid-feedback">
+                                        please fill in your username
                                     </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="text-primary" for="password">Password</label>
+                                        <input id="password" type="password" class="form-control" name="password"
+                                        tabindex="2" placeholder="Masukan Password">
+                                    <div class="invalid-feedback">
+                                        please fill in your password
+                                    </div>
+                              
 
                                     <div class="form-group">
-                                        <div class="d-block">
-                                            <label for="password" class="control-label text-primary">Password</label>
-                                            <div class="float-right d-none">
-                                                <a href="/forgot-password" class="text-small text-primary">
-                                                    Lupa Password?
-                                                </a>
-                                            </div>
-                                            <input id="password" type="password" class="form-control" name="password"
-                                                tabindex="2" placeholder="Masukan Password">
-                                            <div class="invalid-feedback">
-                                                please fill in your password
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <span>Belum punya akun? </span>
-                                        <a href="/daftar" class="">
-                                            Daftar
-                                        </a>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                                        <button type="submit" class="btn btn-primary btn-lg btn-block mt-3" tabindex="2">
                                             Login
                                         </button>
                                     </div>

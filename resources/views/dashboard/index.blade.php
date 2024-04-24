@@ -9,7 +9,7 @@
     </div>
 
     <div class="alert alert-success">
-        <p> Hii Admin Gracia Food Yang Baik Hati Dan Cakep      .</p>
+        <p> Hii Admin Gracia Food Yang Baik Hati Dan Cakep</p>
     </div>
 
     {{-- @if(auth()->user()->level=='admin') --}}

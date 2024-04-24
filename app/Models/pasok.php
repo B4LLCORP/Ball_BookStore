@@ -9,7 +9,7 @@ class pasok extends Model
 {
     use HasFactory;
     
-    protected $table = "pasok";
+    protected $table = "pasoks";
     protected $primaryKey = "id_pasok";
     protected $guarded=[];
 }
